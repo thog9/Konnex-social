@@ -1,0 +1,10 @@
+inquirer
+web3
+colorama
+eth-account
+py-solc-x
+loguru
+aiohttp
+aiohttp_socks
+
+
