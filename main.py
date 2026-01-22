@@ -69,7 +69,6 @@ SCRIPT_MAP = {
     "active": run_active,
     "checkin": run_checkin,
     "community": run_community,
-    "discord": run_discord,
     "exit": cmd_exit
 }
 
