@@ -58,6 +58,10 @@ async def run_community(language: str):
 async def run_active(language: str):
     from scripts.active import run_active as active_run
     await active_run(language)
+
+async def run_testnet(language: str):
+    from scripts.testnet import run_testnet as testnet_run
+    await testnet_run(language)
     
 async def cmd_exit(language: str):
     messages = {"vi": "Đang thoát...", "en": "Exiting..."}
@@ -69,6 +73,7 @@ SCRIPT_MAP = {
     "active": run_active,
     "checkin": run_checkin,
     "community": run_community,
+    "testnet": run_testnet,
     "exit": cmd_exit
 }
 
@@ -79,7 +84,8 @@ def get_available_scripts(language):
         'vi': [
             {"name": "1. Tự động Actions (Login X)", "value": "active", "locked": True},
             {"name": "2. Tự động hoàn thành nhiệm vụ Daily Check-in", "value": "checkin"},
-            {"name": "3. Tự động hoàn thành nhiệm vụ Community", "value": "community", "locked": True},          
+            {"name": "3. Tự động hoàn thành nhiệm vụ Community", "value": "community", "locked": True},
+            {"name": "4. Tự động hoàn thành nhiệm vụ Training Robots ", "value": "testnet", "locked": True}, 
             
             {"name": "X. Thoát", "value": "exit"},
         ],
@@ -87,6 +93,7 @@ def get_available_scripts(language):
             {"name": "1. Automatic Actions (Login X)", "value": "active", "locked": True},
             {"name": "2. Automatic task Daily Check-in", "value": "checkin"},
             {"name": "3. Automatic task Community", "value": "community", "locked": True},
+            {"name": "4. Automatic task Training Robots", "value": "testnet", "locked": True},
 
 
             {"name": "X. Thoát", "value": "exit"},
@@ -200,6 +207,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
