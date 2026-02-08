@@ -85,7 +85,7 @@ def get_available_scripts(language):
             {"name": "1. Tự động Actions (Login X)", "value": "active", "locked": True},
             {"name": "2. Tự động hoàn thành nhiệm vụ Daily Check-in", "value": "checkin"},
             {"name": "3. Tự động hoàn thành nhiệm vụ Community", "value": "community", "locked": True},
-            {"name": "4. Tự động hoàn thành nhiệm vụ Training Robots ", "value": "testnet", "locked": True}, 
+            {"name": "4. Tự động hoàn thành nhiệm vụ Training Robots ", "value": "testnet"}, 
             
             {"name": "X. Thoát", "value": "exit"},
         ],
@@ -93,7 +93,7 @@ def get_available_scripts(language):
             {"name": "1. Automatic Actions (Login X)", "value": "active", "locked": True},
             {"name": "2. Automatic task Daily Check-in", "value": "checkin"},
             {"name": "3. Automatic task Community", "value": "community", "locked": True},
-            {"name": "4. Automatic task Training Robots", "value": "testnet", "locked": True},
+            {"name": "4. Automatic task Training Robots", "value": "testnet"},
 
 
             {"name": "X. Thoát", "value": "exit"},
@@ -207,6 +207,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
